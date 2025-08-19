@@ -1,0 +1,63 @@
+/* InterviewSessionBox.css */
+
+.interview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #f0f4ff, #e0f2fe);
+}
+
+.interview-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 1.5rem;
+}
+
+.interview-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .interview-content {
+    flex-direction: row;
+  }
+}
+
+/* ✅ Increased size from 160px to 240px */
+.avatar-container {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.avatar-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.speech-box {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0)}
+
+  @keyframes headshake {
+  0% { transform: translateX(0) rotate(0deg); }
+  25% { transform: translateX(-6px) rotate(-2deg); }
+  50% { transform: translateX(6px) rotate(2deg); }
+  75% { transform: translateX(-4px) rotate(-1deg); }
+  100% { transform: translateX(0) rotate(0deg); }
+}
+.avatar-container.headshake .avatar-video {
+  animation: headshake 0.8s ease-in-out infinite;
+}

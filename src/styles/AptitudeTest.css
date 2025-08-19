@@ -1,0 +1,90 @@
+.aptitude-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.aptitude-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.aptitude-timer {
+  text-align: right;
+  font-size: 14px;
+  color: #e63946;
+  margin-bottom: 20px;
+}
+
+.aptitude-question {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.aptitude-options label {
+  display: block;
+  cursor: pointer;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.aptitude-options input[type="radio"] {
+  margin-right: 8px;
+}
+
+.aptitude-next-btn {
+  background: #1d4ed8;
+  color: #fff;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.aptitude-next-btn:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+.aptitude-next-btn:hover:not(:disabled) {
+  background: #2563eb;
+}
+
+.aptitude-result {
+  text-align: center;
+  margin-top: 60px;
+  font-family: Arial, sans-serif;
+}
+
+.aptitude-result h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.aptitude-result p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.aptitude-result button {
+  background: #059669;
+  color: #fff;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.aptitude-result button:hover {
+  background: #047857;
+}
